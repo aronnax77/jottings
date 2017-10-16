@@ -4,10 +4,6 @@ TABLE OF CONTENTS
 AUTHOR            - Richard Myatt
 DATE              - 27 September 2017
 
-NOTES:
-Rules followed by SWITCH shourl be commented out or deleted in the final design
-for any site.
-
 
 GENERAL STYLING                - html elements and shared styles
 VERTICAL MENU                  - styling for vertical menu
@@ -26,11 +22,6 @@ lightblue             - border arround menu
 rgb(230, 230, 230)    - background for info panel
 rgb(100, 100, 100)    - advisory text at base of info panel
 
-############ To be deleted ############
-red                   - header border to aid design - delete or modify as necessary
-blue                  - article border to aid design - delete or modify as necessary
-green                 - section border to aid design - delete or modify as necessary
-rgb(230, 230, 230, 1) - article background - delete or modify as necessary
 
 Note: https://autoprefixer.github.io was used to add the prefixed additions in
       the code below.
@@ -56,13 +47,12 @@ header {
   font-family: 'Capriola';
   width: 90vw;
   margin: 0 auto;
-  background-color: white; /* SWITCH */
+  background-color: white;
   text-align: center;
   font-size: 1.5vw;
   height: 150px;
   padding-top: 50px;
   padding-bottom: 50px;
-  /*border: 4px solid red; /* SWITCH */
 }
 
 nav {
@@ -80,7 +70,6 @@ article {
   padding-top: 20px;
   padding-bottom: 50px;
   background-color: white;
-  /*border: 4px solid blue; /* SWITCH */
 }
 
 hr {
@@ -88,18 +77,19 @@ hr {
 }
 
 section {
-  margin: 2% 14%
-  /*height: 300px; /* switch */
-  /*border: 4px solid green; /* SWITCH */
+  margin: 2% 14%;
 }
 
 footer {
   position: relative;
   width: 90vw;
   margin: 0 auto;
-  background-color: white; /* SWITCH */
+  background-color: white;
   height: 150px;
-  /*border: 4px solid yellow; /* SWITCH */
+}
+
+.reset-link {
+  text-align: right;
 }
 /* General styling ends */
 
@@ -112,10 +102,11 @@ nav div {
 }
 
 .vertical-menu {
+    float: left;
     font-size: 0.8em;
     margin-top: 0px;
-    margin-left: 4%;
-    width: 280px; /* Set a width if you like */
+    margin: 2% 14%;
+    width: 280px;
 }
 
 .vertical-menu a {
@@ -148,8 +139,6 @@ p .material-icons {
 
 section.info-icon-and-panel {
   text-align: right;
-	/*padding-top: 30px;
-  padding-right: 30px;*/
 }
 
 #information-panel-text {
@@ -178,7 +167,7 @@ section.info-icon-and-panel {
   position: absolute;
   right: 5vw;
   bottom: 0px;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .divider {
